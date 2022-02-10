@@ -1,0 +1,34 @@
+# 🚨 Don't change the code below 👇
+height = float(input("enter your height in m: "))
+weight = float(input("enter your weight in kg: "))
+# 🚨 Don't change the code above 👆
+
+# Write your code below this line 👇
+
+bmi = round(weight / (height * 2), 1)
+
+# if bmi < 18.5:
+# 	print(f"You are have a bmi of {bmi} which means that you are underweight!")
+# elif bmi >= 18.5 and bmi < 25:
+# 	print(f"You are have a bmi of {bmi} which means that you are a normal weight!")
+# elif bmi > 25 and bmi < 30:
+# 	print(f"You are have a bmi of {bmi} which means that you are slightly overweight!")
+# elif bmi >= 30 and bmi < 35:
+# 	print(f"You are have a bmi of {bmi} which means that you are obese!")
+# else:
+# 	print(f"You are have a bmi of {bmi} which means that you are clinically obese!")
+
+# Simplifying a Chained Comparison in Python
+
+if bmi < 18.5:
+	print(f"You are have a bmi of {bmi} which means that you are underweight!")
+elif 18.5 <= bmi < 25:
+	print(f"You are have a bmi of {bmi} which means that you are a normal weight!")
+elif 25 < bmi < 30:
+	print(f"You are have a bmi of {bmi} which means that you are slightly overweight!")
+elif 30 <= bmi < 35:
+	print(f"You are have a bmi of {bmi} which means that you are obese!")
+else:
+	print(f"You are have a bmi of {bmi} which means that you are clinically obese!")
+
+# Just flip the left one symbols around?
